@@ -90,6 +90,12 @@ padding: 0 16px ;
 margin: 0 auto;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*===Mobile Header styles===*/
 .navigation-list {
   display: none;
@@ -98,11 +104,6 @@ margin: 0 auto;
 .list {
   display: none;
 }
-
-/*.header-nav {
-  display: flex;
-  align-items: center;
-}*/
 
 .logo {
 color: var(--primary-brand);
@@ -119,6 +120,13 @@ text-transform: uppercase;
   color: var(--dark);
 }
 
+.mobile-menu-open-btn {
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
 /*===Mobile Header styles===*/
 
 @media screen and (min-width:768px){.container
