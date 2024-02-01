@@ -1,3 +1,19 @@
+:root {
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtitle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --modal-overlay: #2e2f42;
+  --hero-background: #2e2f42;
+  --white-background: #ffffff;
+  --modal-background: #fcfcfc;
+}
+
+
 *,
 ::before,
 ::after {
@@ -66,4 +82,50 @@ a {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  
+
+  /*Mobile-styles*/
+.container {
+max-width: 320px;
+padding: 0 16px ;
+margin: 0 auto;
+}
+
+/*===Mobile Header styles===*/
+.navigation-list {
+  display: none;
+}
+
+.list {
+  display: none;
+}
+
+/*.header-nav {
+  display: flex;
+  align-items: center;
+}*/
+
+.logo {
+color: var(--primary-brand);
+font-family: "Raleway", sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.17em;
+letter-spacing: 0.54px;
+text-transform: uppercase;
+}
+
+.logo .some-class {
+  color: var(--dark);
+}
+
+/*===Mobile Header styles===*/
+
+@media screen and (min-width:768px){.container
+  {max-width:768px;}
+}
+
+@media screen and (min-width:1158px){.container
+  {max-width: 1158px;
+  padding: 0 15px;}
+}
