@@ -83,7 +83,6 @@ a {
     overflow: hidden;
   }
 
-  /*Mobile-styles*/
 .container {
 max-width: 320px;
 padding: 0 16px ;
@@ -96,7 +95,8 @@ margin: 0 auto;
   align-items: center;
 }
 
-/*===Mobile Header styles===*/
+
+    /*===Mobile Header styles===*/
 .navigation-list {
   display: none;
 }
@@ -114,6 +114,7 @@ font-weight: 700;
 line-height: 1.17em;
 letter-spacing: 0.54px;
 text-transform: uppercase;
+padding: 17px 0;
 }
 
 .logo .some-class {
@@ -127,11 +128,16 @@ text-transform: uppercase;
   cursor: pointer;
   border: none;
 }
-/*===Mobile Header styles===*/
+    /*===/Mobile Header styles===*/
+
 
 @media screen and (min-width:768px){.container
   {max-width:768px;}
 }
+
+   /*===Tablet Header styles===*/
+
+   /*===/Tablet Header styles===*/
 
 @media screen and (min-width:1158px){.container
   {max-width: 1158px;
