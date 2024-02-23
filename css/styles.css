@@ -128,16 +128,22 @@ padding: 17px 0;
   cursor: pointer;
   border: none;
 }
+
+.header-page {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
     /*===/Mobile Header styles===*/
 
 
 @media screen and (min-width:768px){.container
   {max-width:768px;}
+    
 }
+    /*===Tablet Header styles===*/
+  
 
-   /*===Tablet Header styles===*/
-
-   /*===/Tablet Header styles===*/
+    /*===/Tablet Header styles===*/
 
 @media screen and (min-width:1158px){.container
   {max-width: 1158px;
