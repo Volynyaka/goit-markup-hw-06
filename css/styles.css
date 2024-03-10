@@ -13,11 +13,10 @@
   --modal-background: #fcfcfc;
 }
 
-
 *,
 ::before,
 ::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -31,62 +30,67 @@ body {
 }
 
 a {
-    text-decoration: none;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  ul {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-  }
-  
-  img {
-    display: block;
-    max-width: 100%;
-  }
-  
-  .list {
-    list-style-type: none;
-  }
-  
-  button {
-    cursor: pointer;
-    font-family: inherit;
-    color: currentColor;
-  }
-  
-  input {
-    font-family: inherit;
-  }
+  text-decoration: none;
+}
 
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.list {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+}
+
+input {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header-page {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 
 .container {
-max-width: 320px;
-padding: 0 16px ;
-margin: 0 auto;
+  max-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -95,8 +99,7 @@ margin: 0 auto;
   align-items: center;
 }
 
-
-    /*===Mobile Header styles===*/
+/*===Mobile Header styles===*/
 .navigation-list {
   display: none;
 }
@@ -106,15 +109,15 @@ margin: 0 auto;
 }
 
 .logo {
-color: var(--primary-brand);
-font-family: "Raleway", sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 1.17em;
-letter-spacing: 0.54px;
-text-transform: uppercase;
-padding: 17px 0;
+  color: var(--primary-brand);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17em;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  padding: 17px 0;
 }
 
 .logo .some-class {
@@ -128,24 +131,79 @@ padding: 17px 0;
   cursor: pointer;
   border: none;
 }
+/*===/Mobile Header styles===*/
 
-.header-page {
-  padding-top: 16px;
-  padding-bottom: 16px;
+
+
+/*===Mobile hero section-one===*/
+.hero {
+  background-color: var(--hero-background);
+  padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
 }
-    /*===/Mobile Header styles===*/
 
 
-@media screen and (min-width:768px){.container
-  {max-width:768px;}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  text-align: center;
+  color: var(--white-background);
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+/*====Button====*/
+.btn-order {
+  font-family: "Roboto", sans-serif;
+  color: var(--white-background);
+  background-color: var(--primary-brand);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-order:hover,
+.btn-order:focus {
+  background-color: var(--pressed-state);
+}
+/*===/Mobile hero section-one===*/
+
+
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/*===Tablet Header styles===*/
+
+/*===/Tablet Header styles===*/
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
     
-}
-    /*===Tablet Header styles===*/
-  
-
-    /*===/Tablet Header styles===*/
-
-@media screen and (min-width:1158px){.container
-  {max-width: 1158px;
-  padding: 0 15px;}
+  }
 }
